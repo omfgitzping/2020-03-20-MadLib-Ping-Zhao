@@ -172,10 +172,13 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Mad Lib"/>
+                                <connections>
+                                    <action selector="buttonEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6T-eQ-mlH"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rr-1b-SfV">
-                                <rect key="frame" x="40" y="664" width="334" height="178"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buo-mN-nco">
+                                <rect key="frame" x="20" y="644" width="374" height="218"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -183,23 +186,33 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="RZn-lD-wfd" firstAttribute="top" secondItem="Atx-NL-Y6l" secondAttribute="bottom" constant="20" id="8kd-DS-Sft"/>
-                            <constraint firstItem="3rr-1b-SfV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="O1i-gE-Ljc"/>
+                            <constraint firstItem="buo-mN-nco" firstAttribute="top" secondItem="RZn-lD-wfd" secondAttribute="bottom" constant="20" id="9TU-ZC-hOu"/>
+                            <constraint firstItem="buo-mN-nco" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K4m-2x-Ant"/>
+                            <constraint firstItem="buo-mN-nco" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RHd-eZ-8k2"/>
                             <constraint firstItem="RZn-lD-wfd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ryp-W8-gJc"/>
                             <constraint firstItem="Atx-NL-Y6l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XKn-GK-wCb"/>
                             <constraint firstItem="Atx-NL-Y6l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YN5-zt-Fls"/>
-                            <constraint firstItem="3rr-1b-SfV" firstAttribute="top" secondItem="RZn-lD-wfd" secondAttribute="bottom" constant="40" id="aa6-0a-9bS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Atx-NL-Y6l" secondAttribute="trailing" constant="20" id="caE-d1-N8V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rr-1b-SfV" secondAttribute="trailing" constant="40" id="gbB-Wr-5ED"/>
-                            <constraint firstItem="3rr-1b-SfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hiW-xa-TBO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3rr-1b-SfV" secondAttribute="bottom" constant="20" id="inB-5D-vHd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="buo-mN-nco" secondAttribute="trailing" constant="20" id="jkD-dd-BF2"/>
                             <constraint firstItem="Atx-NL-Y6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qzY-gB-4DY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="adjective1" destination="cWR-V1-bpC" id="09V-Gz-djA"/>
+                        <outlet property="adjective2" destination="VIG-Xj-PUy" id="svc-bn-ReN"/>
+                        <outlet property="adjective3" destination="Ink-CL-FcR" id="cwP-0q-Dxu"/>
+                        <outlet property="bodyOrgan" destination="aWf-Ev-hKJ" id="z8K-gR-TgA"/>
+                        <outlet property="container" destination="TlZ-dF-uEb" id="vTf-su-tL1"/>
+                        <outlet property="labelDisplay" destination="buo-mN-nco" id="VWU-hs-b6Q"/>
+                        <outlet property="number" destination="8Jp-Eh-PQr" id="DSM-mp-eam"/>
+                        <outlet property="pluralNoun" destination="8nn-Sz-OUS" id="FTE-nB-I9H"/>
+                        <outlet property="verb" destination="l7W-s9-Ft6" id="eyy-MC-2C9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="115"/>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
